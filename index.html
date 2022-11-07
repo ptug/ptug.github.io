@@ -16,7 +16,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="description" content=" [09 May 2022] &#34;Robot Person Following in Uniform Crowd Environment&#34; accepted in ICRA 2022 Workshop. [04 Feb 2022] PTUG dataset submitted to IEEE Transactions on Human Machine Systems. ">
   <meta property="og:title" content="PTUG Benchmark" />
-<meta property="og:description" content="Person Tracking in Uniform Appearance Group Benchmark" />
+<meta property="og:description" content="Robot-Person Tracking in Uniform Appearance Scenarios: A New Dataset and Challenges" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ptug.github.io/" />
 
@@ -455,7 +455,7 @@ html {
         ></img>
       </div>
       <div class="hero-subtitle-container row justify-content-center align-items-start">
-        <h1 class="hero-subtitle overlay jumbotron-heading my-4 text-body">A large-scale database and benchmark for Person Tracking in Uniform appearance Group</h1>
+        <h1 class="hero-subtitle overlay jumbotron-heading my-4 text-body">Robot-Person Tracking in Uniform Appearance Scenarios</h1>
       </div><div class="hero-buttons">
       <a class="overlay btn btn-lg m-2 btn-info " href="/#">
         <div class="column justify-content-center align-content-center">Paper</div>
@@ -471,7 +471,7 @@ html {
 </header><script>
     var fragmentName = "hero";window.syna.api.register("hero", "hero-" + fragmentName, {
       selector: "hero-particles-js",
-      config: null,
+      config: JSON.parse("\n{\n    \"particles\": {\n      \"number\": {\n        \"value\": 80,\n        \"density\": {\n          \"enable\": true,\n          \"value_area\": 800\n        }\n      },\n      \"color\": {\n        \"value\": \"#ffffff\"\n      },\n      \"shape\": {\n        \"type\": \"circle\",\n        \"stroke\": {\n          \"width\": 0,\n          \"color\": \"#000000\"\n        },\n        \"polygon\": {\n          \"nb_sides\": 5\n        },\n        \"image\": {\n          \"src\": \"img/github.svg\",\n          \"width\": 100,\n          \"height\": 100\n        }\n      },\n      \"opacity\": {\n        \"value\": 0.5,\n        \"random\": false,\n        \"anim\": {\n          \"enable\": false,\n          \"speed\": 1,\n          \"opacity_min\": 0.1,\n          \"sync\": false\n        }\n      },\n      \"size\": {\n        \"value\": 3,\n        \"random\": true,\n        \"anim\": {\n          \"enable\": false,\n          \"speed\": 40,\n          \"size_min\": 0.1,\n          \"sync\": false\n        }\n      },\n      \"line_linked\": {\n        \"enable\": true,\n        \"distance\": 150,\n        \"color\": \"#ffffff\",\n        \"opacity\": 0.4,\n        \"width\": 1\n      },\n      \"move\": {\n        \"enable\": true,\n        \"speed\": 6,\n        \"direction\": \"none\",\n        \"random\": false,\n        \"straight\": false,\n        \"out_mode\": \"out\",\n        \"bounce\": false,\n        \"attract\": {\n          \"enable\": false,\n          \"rotateX\": 600,\n          \"rotateY\": 1200\n        }\n      }\n    },\n    \"interactivity\": {\n      \"detect_on\": \"canvas\",\n      \"events\": {\n        \"onhover\": {\n          \"enable\": true,\n          \"mode\": \"repulse\"\n        },\n        \"onclick\": {\n          \"enable\": true,\n          \"mode\": \"push\"\n        },\n        \"resize\": true\n      },\n      \"modes\": {\n        \"grab\": {\n          \"distance\": 400,\n          \"line_linked\": {\n            \"opacity\": 1\n          }\n        },\n        \"bubble\": {\n          \"distance\": 400,\n          \"size\": 40,\n          \"duration\": 2,\n          \"opacity\": 8,\n          \"speed\": 3\n        },\n        \"repulse\": {\n          \"distance\": 200,\n          \"duration\": 0.4\n        },\n        \"push\": {\n          \"particles_nb\": 4\n        },\n        \"remove\": {\n          \"particles_nb\": 2\n        }\n      }\n    },\n    \"retina_detect\": true\n  }"),
     });
   </script>
   
@@ -626,7 +626,7 @@ html {
             </div>
               <div class="row justify-content-center text-center p-2">
                 <div class=" text-body">
-                  <h2 id="pose-variation">Pose Variation</h2>
+                  <h2 id="illumination-variation">Illumination Variation</h2>
 <p>The video sequences also has the illumination intensity of the environment changed from light to dark during tracking.</p>
 
                 </div>
@@ -669,6 +669,97 @@ html {
     </div>
 </section>
 
+<!-- Items -->
+<section id="samples_header" class="fragment ">
+    <div class="container-fluid bg-primary ">
+    <div class="container py-5 ">
+
+  <div class="title-container row mx-0">
+    <div class="title col px-0 text-center text-body">
+      <h2>First frame of the collected video sequences</h2>
+    </div>
+  </div>
+
+  <div class="row justify-content-center align-items-stretch items">
+          <div class="col-md-4 items-column">
+            <div class="row image justify-content-center align-items-center">
+                  <a href="/#" class="col align-items-center d-flex flex-column header text-body">
+                  </a>
+            </div>
+          </div></div>
+    </div>
+    </div>
+</section>
+
+
+<!-- Hero -->
+<header id="samples_hero" class="fragment hero">
+    <div
+      style="min-height: 600px;background-image:url(/images/samples.png)"
+      class="jumbotron text-center header-image mb-0 bg-primary"><div class="hero-buttons">
+  </div>
+  </div>
+</header>
+<!-- Items -->
+<section id="overall_comparision" class="fragment ">
+    <div class="container-fluid bg-light ">
+    <div class="container py-5 ">
+
+  <div class="title-container row mx-0">
+    <div class="title col px-0 text-center text-body">
+      <h2>Performance comparison of SOTA Trackers</h2>
+    </div>
+  </div>
+
+  <div class="row justify-content-center align-items-stretch items">
+          <div class="col-md-4 items-column">
+            <div class="row image justify-content-center align-items-center">
+                  <a href="/#" class="col align-items-center d-flex flex-column header text-body">
+                  <img src="/images/overall_comparision_new.png" class="p-10 w-100 mb-2" alt="">
+                  </a>
+            </div>
+              <div class="row justify-content-center text-center p-2">
+                <div class=" text-body">
+                  <p>Two different scenarios including single-person tracking and multi-person tracking in uniform appearance scenarios are considered. And, the performance of the trackers highly degrades in the presence of uniform appearance in the scenes.</p>
+
+                </div>
+              </div>
+          </div></div>
+    </div>
+    </div>
+</section>
+
+<!-- Items -->
+<section id="tracker_visualization_header" class="fragment ">
+    <div class="container-fluid bg-light ">
+    <div class="container py-5 ">
+
+  <div class="title-container row mx-0">
+    <div class="title col px-0 text-center text-body">
+      <h2>Visualization of the SOTA trackers&rsquo; performance on PTUA dataset</h2>
+    </div>
+  </div>
+
+  <div class="row justify-content-center align-items-stretch items">
+          <div class="col-md-4 items-column">
+            <div class="row image justify-content-center align-items-center">
+                  <a href="/#" class="col align-items-center d-flex flex-column header text-body">
+                  </a>
+            </div>
+          </div></div>
+    </div>
+    </div>
+</section>
+
+
+<!-- Hero -->
+<header id="tracker_visualization_hero" class="fragment hero">
+    <div
+      style="min-height: 300px;background-image:url(/images/tracker_visualization.png)"
+      class="jumbotron text-center header-image mb-0 bg-light"><div class="hero-buttons">
+  </div>
+  </div>
+</header>
 <!-- Content -->
 <section id="recent_news" class="fragment content-fragment">
     <div class="container-fluid bg-light overlay">
@@ -741,7 +832,7 @@ IEEE Transactions on Human Machine Systems <i>[Under Review]</i>
               </div><div class="mt-5 mb-0 text-body">
               <h2>Adarsh Ghimire</h2>
             </div>
-            <div class="member text-body"><h5 class="mb-3">Master Student</h5><h6 class="font-italic mb-1">Lives in <a href="https://www.google.com/maps/place/AbuDhabi,+UAE/">Abu Dhabi, UAE</a></h6><div class="row justify-content-center pt-4"><span class="fa-stack fa-2x m-2" title="">
+            <div class="member text-body"><h5 class="mb-3">Master Student</h5><div class="row justify-content-center pt-4"><span class="fa-stack fa-2x m-2" title="">
                       <a href="mailto:adarshghimire5@gmail.com">
                         <i class="fas fa-circle fa-stack-2x text-dark"></i>
                         <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -775,7 +866,7 @@ Morbi efficitur dui sit amet orci porttitor, nec tincidunt turpis elementum. -->
               </div><div class="mt-5 mb-0 text-body">
               <h2>Xiaoxiong Zhang</h2>
             </div>
-            <div class="member text-body"><h5 class="mb-3">PhD Student</h5><h6 class="font-italic mb-1">Lives in <a href="https://www.google.com/maps/place/AbuDhabi,+UAE/">Abu Dhabi, UAE</a></h6><div class="row justify-content-center pt-4"><span class="fa-stack fa-2x m-2" title="">
+            <div class="member text-body"><h5 class="mb-3">PhD Student</h5><div class="row justify-content-center pt-4"><span class="fa-stack fa-2x m-2" title="">
                       <a href="mailto:100049862@ku.ac.ae">
                         <i class="fas fa-circle fa-stack-2x text-dark"></i>
                         <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -809,7 +900,7 @@ Morbi efficitur dui sit amet orci porttitor, nec tincidunt turpis elementum. -->
               </div><div class="mt-5 mb-0 text-body">
               <h2>Sajid Javed</h2>
             </div>
-            <div class="member text-body"><h5 class="mb-3">Assistant Professor</h5><h6 class="font-italic mb-1">Lives in <a href="https://www.google.com/maps/place/AbuDhabi,+UAE/">Abu Dhabi, UAE</a></h6><div class="row justify-content-center pt-4"><span class="fa-stack fa-2x m-2" title="">
+            <div class="member text-body"><h5 class="mb-3">Assistant Professor</h5><div class="row justify-content-center pt-4"><span class="fa-stack fa-2x m-2" title="">
                       <a href="mailto:sajid.javed@ku.ac.ae">
                         <i class="fas fa-circle fa-stack-2x text-dark"></i>
                         <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -843,7 +934,7 @@ Morbi efficitur dui sit amet orci porttitor, nec tincidunt turpis elementum. -->
               </div><div class="mt-5 mb-0 text-body">
               <h2>Jorge Dias</h2>
             </div>
-            <div class="member text-body"><h5 class="mb-3">Full Professor</h5><h6 class="font-italic mb-1">Lives in <a href="https://www.google.com/maps/place/AbuDhabi,+UAE/">Abu Dhabi, UAE</a></h6><div class="row justify-content-center pt-4"><span class="fa-stack fa-2x m-2" title="">
+            <div class="member text-body"><h5 class="mb-3">Full Professor</h5><div class="row justify-content-center pt-4"><span class="fa-stack fa-2x m-2" title="">
                       <a href="mailto:jorge.dias@ku.ac.ae">
                         <i class="fas fa-circle fa-stack-2x text-dark"></i>
                         <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -876,7 +967,7 @@ Morbi efficitur dui sit amet orci porttitor, nec tincidunt turpis elementum. -->
               </div><div class="mt-5 mb-0 text-body">
               <h2>Naoufel Werghi</h2>
             </div>
-            <div class="member text-body"><h5 class="mb-3">Full Professor</h5><h6 class="font-italic mb-1">Lives in <a href="https://www.google.com/maps/place/AbuDhabi,+UAE/">Abu Dhabi, UAE</a></h6><div class="row justify-content-center pt-4"><span class="fa-stack fa-2x m-2" title="">
+            <div class="member text-body"><h5 class="mb-3">Full Professor</h5><div class="row justify-content-center pt-4"><span class="fa-stack fa-2x m-2" title="">
                       <a href="mailto:naoufel.werghi@ku.ac.ae">
                         <i class="fas fa-circle fa-stack-2x text-dark"></i>
                         <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -910,112 +1001,6 @@ Morbi efficitur dui sit amet orci porttitor, nec tincidunt turpis elementum. -->
     </div>
 </section>
 
-
-<!-- Contact -->
-<!-- Contact -->
-<section id="contact" class="fragment ">
-    <div class="container-fluid bg-light ">
-    <div class="container py-5 ">
-
-  <div class="title-container row mx-0">
-    <div class="title col px-0 text-center text-body">
-      <h2>Contact fragment</h2>
-    </div>
-  </div><div class="subtitle-container row mx-0">
-    <div class="subtitle col pt-4 pb-0 px-0 text-center text-body">
-      <h5><em>not working</em></h5>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-12">
-      <form
-        class="contact position-relative"
-        method="POST"
-        name="defaultContact"
-        id="defaultContact" action="https://example.com/mailout">
-          <div class="row py-3 should-fade">
-            <div class="col-md-6">
-                <div class="form-group">
-                  <input
-                    id="name"
-                    name="name"
-                    class="form-control"
-                    type="text"
-                    data-validation
-                    data-validation-error-msg="Please enter your name"
-                    placeholder="Your Name *"
-                    required>
-                  <div class="px-2" data-error id="name-error"></div>
-                </div>
-                <div class="form-group">
-                  <input
-                    id="email"
-                    name="email"
-                    class="form-control"
-                    type="text"
-                    data-validation="email"
-                    data-validation-error-msg="Please enter your email address"
-                    placeholder="Your Email *"
-                    required>
-                  <div class="px-2" data-error id="email-error"></div>
-                </div>
-                <div class="form-group">
-                  <input
-                    id="phone"
-                    name="phone"
-                    class="form-control"
-                    type="text"
-                    data-validation="regex"
-                    data-validation-regex="^([0-9,\+]+)$"
-                    data-validation-error-msg="Please enter your phone number"
-                    placeholder="Your Phone *">
-                  <div class="px-2" data-error id="phone-error"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                  <textarea
-                    id="message"
-                    name="message"
-                    class="form-control text-dark"
-                    type="text"
-                    data-validation
-                    data-validation-error-msg="Please enter a message"
-                    placeholder="Your Message *"
-                    rows="4"
-                    required></textarea>
-                  <div class="px-2" data-error id="message-error"></div>
-                </div>
-            </div>
-            <div class="col-lg-12 text-center">
-              <div class="captcha-error alert alert-danger d-none" id="captcha-error">Message could not be send due to captcha not loadable. Please contact us at 100058927@ku.ac.ae..
-              </div>
-              <div class="generic-error alert alert-danger d-none" id="generic-error">Message could not be send. Please contact us at 100058927@ku.ac.ae..
-              </div>
-              <noscript>
-                <div class="alert alert-danger py-2" id="js-error">Message can not be send with javascript disabled. Please contact us at 100058927@ku.ac.ae..
-                </div>
-              </noscript>
-                <button
-                  class="btn submit-btn btn-primary"
-                  type="submit">Send Message
-                </button>
-            </div>
-          </div>
-              <input type="hidden" name="page" value="/"/>
-              <input type="hidden" name="someID" value="example.com"/><div class="generic-success mb-0 mb-3 hidden" id="generic-success">
-            <div class="alert alert-success">Thank you for contacting us
-            </div>
-            <span class="btn btn-primary" data-action="return-form">Return</span>
-          </div>
-      </form>
-    </div>
-  </div>
-    </div>
-    </div>
-</section>
-
 <!-- Footer -->
 <section id="footer" class="fragment ">
     <div class="container-fluid bg-light ">
@@ -1029,14 +1014,14 @@ Morbi efficitur dui sit amet orci porttitor, nec tincidunt turpis elementum. -->
         </a>
         <div class="row justify-content-left ml-0">
             <span class="fa-stack fa-2x mt-3 mr-1" title="facebook">
-              <a href="https://ptug.github.io" class="ignore-color-change">
+              <a href="https://www.facebook.com/khalifauniversity" class="ignore-color-change">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-facebook-f fa-stack-1x fa-fw text-light"></i>
                 <span class="sr-only">facebook</span>
               </a>
             </span>
             <span class="fa-stack fa-2x mt-3 mr-1" title="linkedin">
-              <a href="https://ptug.github.io" class="ignore-color-change">
+              <a href="https://www.linkedin.com/school/khalifauniversity/" class="ignore-color-change">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-linkedin-in fa-stack-1x fa-fw text-light"></i>
                 <span class="sr-only">linkedin</span>
@@ -1045,25 +1030,23 @@ Morbi efficitur dui sit amet orci porttitor, nec tincidunt turpis elementum. -->
         </div>
     </div>
     <div class="col-md m-2 text-body">
-        <h4>Link Title</h4>
         <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link p-0 display-5" href="/#"
-                    class="anchor">Link</a>
+                    class="anchor">VSAP Labs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 display-5" href="https://www.ku.ac.ae/">Khalifa University</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link p-0 display-5" href="/#"
-                    class="anchor">Long Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0 display-5" href="/#"
-                    class="anchor">Tiny Link</a>
+                    class="anchor">Abu Dhabi, UAE</a>
               </li>
         </ul>
     </div>
     <div class="col-md m-2 text-body">
-        <div><h4 id="description">Description</h4>
-<p>Provided by VSAP Labs at Khalifa University.</p>
+        <div><h4 id="provided-by">Provided by</h4>
+<p>VSAP Labs</p>
 </div>
     </div>
   </div>
@@ -1073,7 +1056,7 @@ Morbi efficitur dui sit amet orci porttitor, nec tincidunt turpis elementum. -->
 
 
 <!-- Copyright -->
-<footer class="overlay fragment container-fluid bg-light" id="copyright">
+<footer class="overlay fragment container-fluid bg-primary" id="copyright">
   <div class="container">
     <div class="row py-3">
       <div class="col-md">
@@ -1096,6 +1079,5 @@ Morbi efficitur dui sit amet orci porttitor, nec tincidunt turpis elementum. -->
       <script async defer src="/scripts/syna-hero.min.6bd1f361cd000df565f61f113296ed99e376e920ee7c8508136a21700635dcb5.js"></script>
       <script async defer src="/scripts/syna-content.min.b0072d521bf38e98e2da1d20333cc046a07539294375bff38d5372885de52181.js"></script>
       <script async defer src="/scripts/syna-content.min.b0072d521bf38e98e2da1d20333cc046a07539294375bff38d5372885de52181.js"></script>
-      <script async defer src="/scripts/syna-contact.min.04d79acc86cc6c401b701af4ddeaf269fdfc65940110a74deb4da78dc8c94a12.js"></script>
   </body>
 </html>
